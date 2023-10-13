@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+        background: #a4b0be;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      button {
+        margin: 25px;
+      }
+      .cstm-btn {
+        width: 150px;
+        height: 55px;
+        color: #fff;
+        border-radius: 5px;
+        padding: 15px 30px;
+        cursor: pointer;
+        background: transparent;
+        transition: all 0.4s ease;
+        font-weight: 500;
+        display: inline-block;
+        box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.5),
+          7px 7px 22px 2px rgba((0), 0, 0, 0.2);
+        outline: none;
+        border: none;
+        position: relative;
+      }
+      /* main button design  */
+      .btn-7 {
+        background: linear-gradient(
+          40deg,
+          rgb(4, 168, 244) 0%,
+          rgb(234, 38, 224) 100%
+        );
+        line-height: 42px;
+        padding: 0;
+        border: none;
+      }
+      .btn-7 span {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 100%;
+        font-size: 15px;
+        line-height: 3.5;
+        font-weight: 700;
+      }
+      .btn-7:before,
+      .btn-7:after {
+        position: absolute;
+        content: "";
+        right: 0;
+        bottom: 0;
+        background: rgb(190, 18, 209);
+        box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 0.9),
+          -4px -4px 5px 0px rgba(255, 255, 255, 0.9),
+          7px 7px 20px 0px rgba(0, 0, 0, 0.2),
+          4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+        transition: all 0.3s ease;
+      }
+      .btn-7:before {
+        height: 0%;
+        width: 2px;
+      }
+      .btn-7:after {
+        width: 0%;
+        height: 2px;
+      }
+      .btn-7:hover {
+        color: rgba(251, 75, 2, 1);
+        background: transparent;
+        font-weight: 700;
+        font-size: 15px;
+      }
+      .btn-7:hover:before {
+        height: 100%;
+      }
+      .btn-7:hover:after {
+        width: 100%;
+      }
+      .btn-7 span:before,
+      .btn-7 span:after {
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 0;
+        background: rgb(2, 68, 251);
+        box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 0.9),
+          -4px -4px 5px 0px rgba(255, 255, 255, 0.9),
+          7px 7px 20px 0px rgba(0, 0, 0, 0.2),
+          4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+        transition: all 0.3s ease;
+      }
+      .btn-7 span:before {
+        width: 2px;
+        height: 0%;
+      }
+      .btn-7 span:after {
+        height: 2px;
+        width: 0%;
+      }
+      .btn-7 span:hover:before {
+        height: 100%;
+      }
+      .btn-7 span:hover:after {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="cstm-btn btn-7"><span>Read more</span></button>
+  </body>
+</html>
